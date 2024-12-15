@@ -40,7 +40,6 @@ The pipeline is configured to run using the Flink Runner.
 
 Step 1: Clone the Repository
 - git clone <repository-url>
-- cd <repository-directory>
 
 Step 2: Build the Project
 - Use Maven to build the project:
