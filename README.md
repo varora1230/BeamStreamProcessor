@@ -48,11 +48,11 @@ Step 2: Build the Project
 
 Step 3: Start Kafka
 - Ensure Kafka is running and the required topics (Test, even, odd) are created:
-  bin/kafka-topics.sh --create --topic Test --bootstrap-server localhost:9092
-  bin/kafka-topics.sh --create --topic even --bootstrap-server localhost:9092
-  bin/kafka-topics.sh --create --topic odd --bootstrap-server localhost:9092
+- bin/kafka-topics.sh --create --topic Test --bootstrap-server localhost:9092
+- bin/kafka-topics.sh --create --topic even --bootstrap-server localhost:9092
+- bin/kafka-topics.sh --create --topic odd --bootstrap-server localhost:9092
 
-- Step 4: Run the Pipeline
-  Execute the pipeline using the FlinkRunner:
-  bin/flink run -class org.data.poc.FilterStreamProcessor /Users/shivaniarora/IdeaProjects/BeamStreamProcessor/target/BeamStreamProcessor-1.0-SNAPSHOT.jar
-  bin/flink run -class org.data.poc.SplitStreamProcessor /Users/shivaniarora/IdeaProjects/BeamStreamProcessor/target/BeamStreamProcessor-1.0-SNAPSHOT.jar
+Step 4: Run the Pipeline
+- Execute the pipeline using the FlinkRunner:
+- bin/flink run -class org.data.poc.FilterStreamProcessor /Users/shivaniarora/IdeaProjects/BeamStreamProcessor/target/BeamStreamProcessor-1.0-SNAPSHOT.jar
+- bin/flink run -class org.data.poc.SplitStreamProcessor /Users/shivaniarora/IdeaProjects/BeamStreamProcessor/target/BeamStreamProcessor-1.0-SNAPSHOT.jar
